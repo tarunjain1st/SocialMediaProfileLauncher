@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Anjali Sharma Quick Launcher</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
+    <title>Social Profile Quick Launcher</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
     <style>
       /* Modal Structure */
 
@@ -56,7 +47,7 @@
 
       .modal-icons {
         border-top: 0.5px solid #dadada;
-        height: 50px;
+        height: 60px;
         width: 100%;
       }
 
@@ -89,47 +80,86 @@
         font-size: 40px;
         color: #3c797b;
       }
+      .btn{
+        color: #fff !important;
+        border-radius: .25rem;
+        padding: .375rem .75rem;
+        line-height: 1rem;
+        font-size: 1rem; 
+        text-align: center;
+        vertical-align: middle;
+        background-color: #007bff;
+        border: 1px solid 007bff;
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+      }
+      .btn:hover{
+        color: #fff;
+        background-color: #0069d9;
+        border-color: #0062cc;
+      }
+      .flex a div{
+        visibility: hidden;
+      }
+      .flex:hover{
+        cursor: pointer;
+      }
+      .flex:hover div{
+        visibility: visible;
+      }
     </style>
-    <script src="popup.js"></script>
+    
   </head>
 
   <body>
-    <div class="modal-header">
-      <h1 class="logo">
-        <img class="logo-icon" src="images/anjali-sharma.png" />Anjali Sharma Launcher
-      </h1>
-    </div>
+    <center>
+      <div class="modal-header">
+        <h1 class="logo">
+          Social Links Launcher
+        </h1>
+      </div>
+    </center>
     <div class="modal-content">
-      <p>Easily Access Anjali Sharma's Social Media Profiles</p>
+      <p id="title_text"><span id="name"></span>Social Media Profiles</p>
     </div>
     <div class="modal-icons">
       <div class="flex-container">
         <div class="flex">
-          <a href="https://anjalisharma.tech/" target="_blank">
+          <a id="website_link" href="#!" target="_blank">
             <i class="fa fa-globe" style="color:#3c797b "></i>
+            <div>Website</div>
           </a>
         </div>
          <div class="flex">
-          <a href="https://www.linkedin.com/in/anjalisharmaaa/" target="_blank">
+          <a id="linkedin_link" href="#!" target="_blank">
             <i class="fa fa-linkedin" style="color:#3c797b "></i>
+            <div>Linked</div>
           </a>
         </div>
         <div class="flex">
-          <a href="https://medium.com/@anjalisharmaaa" target="_blank">
+          <a id="medium_link" href="#!" target="_blank">
             <i class="fa fa-medium" style="color:#3c797b "></i>
+            <div>Medium</div>
           </a>
         </div>
         <div class="flex">
-          <a href="https://twitter.com/AnjaliiSharmaaa" target="_blank">
+          <a id="twitter_link" href="#!" target="_blank">
             <i class="fa fa-twitter" style="color:#3c797b "></i>
+            <div>Twitter</div>
           </a>
         </div>
         <div class="flex">
-          <a href="https://github.com/AnjaliSharma1234" target="_blank">
+          <a id="github_link" href="#!" target="_blank">
             <i class="fa fa-github" style="color:#3c797b "></i>
+            <div>GitHub</div>
           </a>
         </div>
       </div>
     </div>
+    <br>
+    <center><a class="btn" role="button" href="edit.html">Edit</a></center>
+    <br>
+    <script src="popup.js"></script>
   </body>
 </html>
